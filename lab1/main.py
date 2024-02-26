@@ -1,6 +1,6 @@
 import random
-from grammar import Grammar
-from finiteAutomaton import FiniteAutomata
+from lab1.grammar import Grammar
+from lab1.finiteAutomaton import FiniteAutomata
 from colorama import Fore
 
 

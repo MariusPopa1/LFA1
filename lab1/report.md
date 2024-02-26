@@ -173,22 +173,22 @@ This method will take some input string, and it will check if it can be obtained
 ### Results
 
 ```text
-    Strings generated:
--> S -> aB -> aC -> bD -> bC -> bD -> a -> aabbba 
+ -> S -> aB -> aC -> bD -> bC -> bD -> cS -> aB -> bS -> aB -> b -> aabbbcabab 
 
--> S -> aB ->  b -> ab 
+-> S -> aB -> aC -> bD -> cS -> aB -> bS -> aB -> b -> aabcabab 
 
--> S -> aB -> aC -> bD -> a -> aaba 
+-> S -> aB -> bS -> aB -> aC -> bD -> bC -> bD -> a -> abaabbba 
 
--> S -> aB -> aC -> bD -> bC -> bD -> cS -> aB -> bS -> aB -> aC -> bD -> cS -> aB -> aC -> bD -> a -> aabbbcabaabcaaba 
+-> S -> aB -> bS -> aB -> aC -> bD -> a -> abaaba 
 
--> S -> aB ->  b -> ab 
+-> S -> aB -> bS -> aB -> b -> abab 
 
- 'ab' can be created
- 'baba' cannot be created
- 'wwa' cannot be created
- 'cca' cannot be created
- 'aaac' cannot be created
+  'ab' is possible
+  'baba' is impossible
+  'aaba' is possible
+  'cca' is impossible
+  'aabcab' is possible
+
 ```
 
 ### Conclusion
