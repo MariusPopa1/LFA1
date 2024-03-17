@@ -22,6 +22,7 @@ def lexer(contents):
                 temp_str = ""
             else:
                 temp_str += char
+            print (temp_str)
         tokens.append(temp_str)
 
         for token in tokens:
