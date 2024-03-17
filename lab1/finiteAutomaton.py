@@ -17,13 +17,14 @@ class FiniteAutomata:
                     self.transition[(symbol, product)] = 'final'
                 else:
                     self.transition[(symbol, product[0])] = product[1]
-
         self.init_state = 'S'
         self.final_state = {symbol for symbol in grammar.products if symbol.isupper()}
 
     def check(self, input_string):
+
         current_state = self.init_state
         for char in input_string:
+
             if not (current_state, char) in self.transition:
                 return False
             current_state = self.transition[(current_state, char)]

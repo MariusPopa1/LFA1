@@ -13,6 +13,8 @@ P={
     D → cS
 }
 """
+
+
 class Grammar:
     def __init__(self):
         self.non_terminal = {'S', 'B', 'C', 'D'}
